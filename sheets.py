@@ -1,4 +1,4 @@
-import gspread
+import gspread # type: ignore
 from google.oauth2.service_account import Credentials
 from dotenv import load_dotenv
 import os

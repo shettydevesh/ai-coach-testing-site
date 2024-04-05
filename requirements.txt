@@ -1,0 +1,5 @@
+gspread==6.1.0
+protobuf==5.26.1
+python-dotenv==1.0.1
+Requests==2.31.0
+streamlit==1.26.0
