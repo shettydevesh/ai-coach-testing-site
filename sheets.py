@@ -1,3 +1,4 @@
+import streamlit as st
 import gspread # type: ignore
 from google.oauth2.service_account import Credentials
 from dotenv import load_dotenv
@@ -8,7 +9,8 @@ load_dotenv()
 
 # Define the scope and authorize the client
 scopes = ["https://www.googleapis.com/auth/spreadsheets"]
-credentials_json = os.getenv("GOOGLE_CREDENTIALS_JSON")
+#credentials_json = os.getenv("GOOGLE_CREDENTIALS_JSON")
+credentials_json = st.secrets["GOOGLE_CREDENTIALS_JSON"]
 
 # Convert the JSON string to a dictionary
 creds = json.loads(credentials_json)
